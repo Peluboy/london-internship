@@ -38,3 +38,68 @@
 .category-items span {
   font-size: 12px;
 }
+
+.candidates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.candidates-number {
+  padding-left: 2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.candidates-header-right {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.candidates-header-right > p {
+  color: var(--primary-color);
+}
+
+.tag-count {
+  color: #22215b;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  display: flex;
+  width: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  font-weight: 400;
+  border-radius: 40px;
+  background: #f7f8fd;
+}
+
+.candidates-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.candidates-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.candidates-count {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.candidate-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.candidate-image-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}

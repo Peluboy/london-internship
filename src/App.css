@@ -16,4 +16,25 @@
 .hashtags {
   font-size: 8px;
   font-weight: 400;
+  display: flex;
+  gap: 0.8rem;
+  color: var(--primary-color);
+}
+
+.categoryTags {
+  font-size: 8px;
+  font-weight: 500;
+  padding: 2px 10px;
+  gap: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  display: flex;
+  background-color: #f3fafc;
+  color: #037092;
+  border-radius: 16px;
+}
+
+.categoryTags-p {
+  display: flex;
+  gap: 0.6rem;
 }
