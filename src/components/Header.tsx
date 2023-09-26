@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/header.css";
 import { headerData, opportunities } from "../assets/data/data";
 import { Tooltip, Dropdown, Menu } from "antd";

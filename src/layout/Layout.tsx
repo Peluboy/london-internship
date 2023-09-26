@@ -1,7 +1,7 @@
 import "../styles/layout.css";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-// import Routers from "../router/Routers";
+import Routers from "../router/Routers";
 
 const Layout = () => {
   return (
@@ -12,7 +12,9 @@ const Layout = () => {
       <div className="sidebar">
         <Sidebar />
       </div>
-      <div className="content">{/* <Routers /> */}</div>
+      <div className="content">
+        <Routers />
+      </div>
     </div>
   );
 };

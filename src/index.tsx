@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           token: {
             colorPrimary: "#1d4ed8",
             controlItemBgHover: "#EDF2FF",
+            fontFamily: "Poppins",
           },
         }}
       >

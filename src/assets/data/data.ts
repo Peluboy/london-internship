@@ -12,6 +12,8 @@ import userCloseIcon from "../images/user-close.svg";
 import userVoiceIcon from "../images/user-voice.svg";
 import mailIcon from "../images/mail.svg";
 
+import fileIcon from "../images/file.svg";
+
 const headerData = [
   {
     title: "Whilst",
@@ -276,4 +278,41 @@ const opportunities = [
   },
 ];
 
-export { headerData, sidebarData, candidates, opportunities };
+const filterCategories = [
+  {
+    title: "Personal Information",
+    icon: fileIcon,
+    items: [
+      "Riyadh, Saudi Arabia",
+      "Bostom, USA",
+      "Edinburgh, UK",
+      "London, UK",
+    ],
+  },
+  {
+    title: "Education",
+    icon: fileIcon,
+    items: [
+      "Cambridge University",
+      "MIT",
+      "Harvard University",
+      "Boston University",
+    ],
+  },
+  {
+    title: "Work Experience",
+    icon: fileIcon,
+    items: ["#top_candidate", "#another_hashtag"],
+  },
+  {
+    title: "Activty Filter",
+    icon: fileIcon,
+    items: ["New York", "Marketing", "London"],
+  },
+  {
+    title: "Advanced Filter",
+    icon: fileIcon,
+  },
+];
+
+export { headerData, sidebarData, candidates, opportunities, filterCategories };

@@ -1,10 +1,16 @@
-import { Button } from "antd";
+import Filter from "../components/Filter";
+import Candidates from "../components/Candidates";
+import "../styles/dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <Button type="primary">Hello</Button>
+    <div className="dashboard-container">
+      <div className="left">
+        <Filter />
+      </div>
+      <div className="right">
+        <Candidates />
+      </div>
     </div>
   );
 };

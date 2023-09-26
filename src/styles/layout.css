@@ -2,13 +2,13 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 72px 1fr;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 110px 1fr;
 }
 
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  padding: 32px;
+  padding: 20px 32px 32px 32px;
 }
 
 .sidebar {
@@ -22,4 +22,9 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+}
+
+.content {
+  padding: 0px 32px 32px 32px;
+  overflow-y: scroll;
 }

@@ -113,3 +113,19 @@
   color: #1d4ed8;
   font-weight: 500;
 }
+
+/* @media (max-width: 768px) {
+  .middle-header {
+    display: none;
+  }
+  .right-header {
+    display: none;
+  }
+  .left-header {
+    display: none;
+  }
+
+  .dropdown {
+    width: 225px;
+  }
+} */
