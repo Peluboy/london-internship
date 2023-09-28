@@ -13,6 +13,8 @@ import userVoiceIcon from "../images/user-voice.svg";
 import mailIcon from "../images/mail.svg";
 
 import fileIcon from "../images/file.svg";
+import mediaIcon from "../images/Artboard 1.svg";
+import noteIcon from "../images/notebook-2.svg";
 
 const headerData = [
   {
@@ -115,6 +117,16 @@ const candidates = [
     school: "Bachelor - Yale (2023 - 2023)",
     hashtags: ["#top_candidate", "#top_candidate"],
     categoryTags: ["New York", "Marketing", "London"],
+    mediaAndNotebookPrograms: [
+      {
+        name: "4",
+        icon: mediaIcon,
+      },
+      {
+        name: "5 Program",
+        icon: noteIcon,
+      },
+    ],
   },
   {
     avatar: "https://ui-avatars.com/api/?name=Ahmed+Salman",

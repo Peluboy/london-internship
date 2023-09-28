@@ -1,6 +1,7 @@
 .dashboard-container {
   display: grid;
   grid-template-columns: 345px 1fr;
+  padding: 0px 32px 32px 32px;
   grid-gap: 3rem;
 }
 
@@ -20,6 +21,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
 }
 
 .category-image-title {
@@ -98,8 +100,38 @@
   gap: 0.4rem;
 }
 
+.candidate-programs {
+  display: flex;
+  gap: 1rem;
+}
+
 .candidate-image-title {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.img-candidate-details {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+.program {
+  display: flex;
+  background: #f7f8fd;
+  padding: 5px 10px;
+  gap: 0.5rem;
+  border-radius: 20px;
+}
+
+.program > p {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
 }

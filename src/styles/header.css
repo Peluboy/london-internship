@@ -114,7 +114,7 @@
   font-weight: 500;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .middle-header {
     display: none;
   }
@@ -122,10 +122,10 @@
     display: none;
   }
   .left-header {
-    display: none;
+    margin-bottom: 2rem;
   }
 
   .dropdown {
     width: 225px;
   }
-} */
+}
