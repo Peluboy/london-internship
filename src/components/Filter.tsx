@@ -5,10 +5,21 @@ import { Input, Card, Checkbox, Divider } from "antd";
 import { filterCategories } from "../assets/data/data";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const Filter = () => {
+interface FilterProps {
+  setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Filter: React.FC<FilterProps> = ({ setSearchQuery }) => {
   const [categoryDropdown, setCategoryDropdown] = useState<{
     [key: string]: boolean;
   }>({});
+  const [searchQueryLocal, setSearchQueryLocal] = useState<string>("");
+
+  const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchQueryLocal(value);
+    setSearchQuery(value); // Update the search query state in the parent component
+  };
 
   const toggleCategoryDropdown = (categoryTitle: string) => {
     setCategoryDropdown({
@@ -30,6 +41,8 @@ const Filter = () => {
             />
           }
           suffix={<InfoCircleOutlined style={{ color: "#9AA6AC" }} />}
+          onChange={handleSearchInputChange}
+          value={searchQueryLocal}
         />
       </div>
       <div className="filter-categories">
