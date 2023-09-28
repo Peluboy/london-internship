@@ -18,7 +18,7 @@ const Filter: React.FC<FilterProps> = ({ setSearchQuery }) => {
   const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchQueryLocal(value);
-    setSearchQuery(value); // Update the search query state in the parent component
+    setSearchQuery(value);
   };
 
   const toggleCategoryDropdown = (categoryTitle: string) => {
